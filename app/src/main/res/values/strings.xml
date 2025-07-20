@@ -603,4 +603,14 @@
     <string name="pref_proxy_password">Password</string>
     <string name="intro_update_checks_title">Update Notifications</string>
     <string name="intro_update_checks_description">If you want to recieve updates, you can enable the switch below! We will notify if an update is available, and you can then choose to apply it.</string>
+
+    <!-- 类别标题 -->
+    <string name="preference_category_params">Options</string>
+
+    <!-- 全局参数相关文本 -->
+    <string name="global_param_title">全局参数</string>
+    <string name="global_param_key">pref_global_param</string>
+    <string name="global_param_dialog_title">编辑全局参数</string>
+    <string name="global_param_summary">当前值：%s</string>
+    <string name="global_param_default"></string>
 </resources>

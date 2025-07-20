@@ -146,6 +146,15 @@ public class Rclone {
             command.add("-vvv");
         }
 
+        String globalParamStr = PreferenceManager
+                .getDefaultSharedPreferences(context)
+                .getString(context.getString(R.string.global_param_key), "");
+
+        if (!globalParamStr.isBlank()){
+            String[] split = globalParamStr.trim().split("\\s+");
+            command.addAll(new ArrayList<>(Arrays.asList(split)));
+        }
+
         command.addAll(args);
         return createCommand(command);
     }
