@@ -695,7 +695,7 @@ public class Rclone {
         }
 
         if (syncDirection == SyncDirectionObject.SYNC_LOCAL_TO_REMOTE) {
-            Collections.addAll(directionParameter, "sync", localPath, remoteSection);
+            Collections.addAll(directionParameter, "sync", localPath, remoteSection,"--create-empty-src-dirs");
             directionParameter.addAll(defaultParameter);
             command = createCommandWithOptions(directionParameter);
         } else if (syncDirection == SyncDirectionObject.SYNC_REMOTE_TO_LOCAL) {
